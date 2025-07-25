@@ -15,7 +15,7 @@ $ServicesToRestart = @('CpSvc')  # Services that will be auto-restarted if down
                          # NOTE: Service must be in BOTH $ServicesConfig AND $ServicesToRestart to be auto-restarted
                          # Example: @('CpSvc') will only auto-restart CpSvc, allowing manual handling of other services
 $RestartWaitTimeSeconds = 30  # Time to wait after restart attempt before re-checking status
-$MaxRestartAttempts = 3  # Maximum retry attempts before giving up on a service
+$MaxRestartAttempts = 3  # Maximum retry attempts before giving up on a service. It checks once per schedule task run.
 $FailureResetMinutes = 59  # Reset failure tracking after this many minutes (1440 = 24 hours, 60 = 1 hour) might make sense to have an odd numbered time. 
 $LogFile = "C:\temp\slack_alerts.log"
 
