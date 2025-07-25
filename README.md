@@ -19,7 +19,7 @@ This script monitors the status of specified Windows services on a Citrix server
 
 > ⚠️ You **must** update the Slack webhook URL and configure the required service variables before use.
 
-### 2. `cachediskcheck.ps1`
+### 2. `CacheDiskCheck.ps1`
 
 Checks the usage of an MCS cache disk to help determine if it needs to be resized. It:
 
